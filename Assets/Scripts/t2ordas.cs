@@ -6,7 +6,7 @@ public class t2ordas : MonoBehaviour
 {
     public valoresenemigos[] valoresEnemigos;
     public valoresenemigos enemigoActual;
-    float tiempoEspera = 0;
+    float tiempoEspera = 0.0f;
     int numOrdaActual = 0;
     int enemigosporCrear = 0;
     int enemigosporMatar = 0;

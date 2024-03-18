@@ -42,11 +42,6 @@ public class movimientoBala : MonoBehaviour
             {
                 damagebleObject.TakeHit(damage, hit);
             }
-
-            //if(hit.collider.tag == "Enemigo"){
-                //Destroy(hit.collider.gameObject);
-
-            //}
             
         }
     }
