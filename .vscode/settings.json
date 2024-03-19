@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Terreno.sln"
+    "dotnet.defaultSolution": "DSH-FPS-main.sln"
 }

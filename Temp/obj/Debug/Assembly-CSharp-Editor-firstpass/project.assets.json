@@ -1,0 +1,106 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETStandard,Version=v2.1": {
+      "Assembly-CSharp-firstpass/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "OccaSoftware.Crosshairs.Editor": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Assembly-CSharp-firstpass.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Assembly-CSharp-firstpass.dll": {}
+        }
+      },
+      "OccaSoftware.Crosshairs.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/OccaSoftware.Crosshairs.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OccaSoftware.Crosshairs.Editor.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Assembly-CSharp-firstpass/1.0.0": {
+      "type": "project",
+      "path": "Assembly-CSharp-firstpass.csproj",
+      "msbuildProject": "Assembly-CSharp-firstpass.csproj"
+    },
+    "OccaSoftware.Crosshairs.Editor/1.0.0": {
+      "type": "project",
+      "path": "OccaSoftware.Crosshairs.Editor.csproj",
+      "msbuildProject": "OccaSoftware.Crosshairs.Editor.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.1": [
+      "Assembly-CSharp-firstpass >= 1.0.0",
+      "OccaSoftware.Crosshairs.Editor >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\usuario\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\usuario\\Downloads\\DSH-FPS-main\\Assembly-CSharp-Editor-firstpass.csproj",
+      "projectName": "Assembly-CSharp-Editor-firstpass",
+      "projectPath": "C:\\Users\\usuario\\Downloads\\DSH-FPS-main\\Assembly-CSharp-Editor-firstpass.csproj",
+      "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\usuario\\Downloads\\DSH-FPS-main\\Temp\\obj\\Debug\\Assembly-CSharp-Editor-firstpass\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netstandard2.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "projectReferences": {
+            "C:\\Users\\usuario\\Downloads\\DSH-FPS-main\\Assembly-CSharp-firstpass.csproj": {
+              "projectPath": "C:\\Users\\usuario\\Downloads\\DSH-FPS-main\\Assembly-CSharp-firstpass.csproj"
+            },
+            "C:\\Users\\usuario\\Downloads\\DSH-FPS-main\\OccaSoftware.Crosshairs.Editor.csproj": {
+              "projectPath": "C:\\Users\\usuario\\Downloads\\DSH-FPS-main\\OccaSoftware.Crosshairs.Editor.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netstandard2.1": {
+        "targetAlias": "netstandard2.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
