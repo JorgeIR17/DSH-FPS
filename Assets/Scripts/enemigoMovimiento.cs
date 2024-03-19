@@ -15,7 +15,6 @@ public class enemigoMovimiento : LivingEntity
     float TimeBetweenAttack = 0.5f;
     bool Atacando = false;
 
-
     LivingEntity targetEntity;
     float damage = 1;
     bool bFinalPartida = false;
@@ -24,14 +23,17 @@ public class enemigoMovimiento : LivingEntity
     {
         base.Start();
         pathFinder = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        // Encuentra el objeto que tenga el tag "Player" y asigna su transformada como objetivo
         target = GameObject.FindGameObjectWithTag("Player").transform;
 
-
+        // Obtiene el radio de colisión del enemigo y del objetivo
         myCollisionradius = GetComponent<CapsuleCollider>().radius;
-        TargetCollisionradius = target.GetComponent<CapsuleCollider>().radius;
+        if (target.GetComponent<CapsuleCollider>() != null)
+            TargetCollisionradius = target.GetComponent<CapsuleCollider>().radius;
+        else
+            TargetCollisionradius = 0.5f; // Valor predeterminado si el objetivo no tiene un CapsuleCollider
         targetEntity = target.GetComponent<LivingEntity>();
         jugador.OnDeathPlayer += FinalPartida;
-
     }
 
     void FinalPartida()
